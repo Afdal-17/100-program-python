@@ -1,20 +1,21 @@
-#PERCEPATAN RATA RATA
-# a = V2 - V1 / t2 -t1
+print("=====================================")
+print("         soal pengkondisian          ")
+print("=====================================")
 
-print("\033[92m===============================")
-print("     PERCEPATAN RATA RATA     ")
-print("-------------------------------")
-v2 = float(input("masukan kecepatan awal: "))
-v1 = float(input("masukan kecepatan akhir: "))
+a = int(input("Masukan nilai a:"))
 
-t2 = float(input("masukan waktu awal: "))
-t1 = float(input("masukan waktu akhir: "))
 
-v = float(v2)-float(v1)
-t = float(t2)-float(t1)
+if a >= 1 and a <= 50:
+    print("Kelompok A")
+if a >= 1 and a <= 25:
+    print("Sub A1")
+elif a >= 26 and a <= 50:
+    print("Sub A2")
 
-hasil = float(v)/float(t)
+if a >= 51 and a <= 100:
+    print("Kelompok B")
+if a >= 51 and a <= 75:
+    print("Sub B1")
+elif a >= 76 and a <= 100:
+    print("Sub A2")
 
-print("\033[1m"f"\nHasilnya adalah: {round (hasil)/2} m/s")
-
-print("_________________________________")
